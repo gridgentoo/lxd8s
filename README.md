@@ -1,15 +1,16 @@
 # lxd8s
 
-lxd8s allows LXD to be run inside Kubernetes. This is achieved by using
-[Firecracker](https://github.com/firecracker-microvm/firecracker) to create a minimal, Alpine-based OS to host LXD.
-LXD clustering is supported (compatible with a Kubernetes `StatefulSet`).
+lxd8s позволяет запускать LXD внутри Kubernetes.       
+Это достигается с помощью Firecracker для создания минимальной ОС на базе Alpine-based OS для размещения LXD.     
+Поддерживается кластеризация LXD clustering (совместима с Kubernetes `StatefulSet`).    
 
 ## Deployment
 
-A Helm chart is provided. See [my charts repo](https://github.com/devplayer0/charts). Check the default `values.yaml`,
-there are quite a number of adjustable options. It's recommended that you install
-[smarter-device-manager](https://gitlab.com/arm-research/smarter/smarter-device-manager) in your cluster so that the
-container has access to `/dev/kvm`.
+Предоставляется Helm chart.   
+See [Helm chart repo](https://github.com/devplayer0/charts).   
+Проверьте значение по умолчанию `values.yaml`, существует довольно много настраиваемых параметров.    
+Рекомендуется установить [smarter-device-manager](https://gitlab.com/arm-research/smarter/smarter-device-manager) в свой кластер, 
+чтобы контейнер имел доступ к `/dev/kvm`.    
 
 ## Development
 
