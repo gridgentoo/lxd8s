@@ -1,3 +1,6 @@
+Оригинальный репозитарий.   
+https://github.com/devplayer0/lxd8s.   
+
 # lxd8s
 
 lxd8s позволяет запускать LXD внутри Kubernetes.       
